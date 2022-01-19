@@ -1,1 +1,1 @@
-# dna_rna_aa.py
+# dna_rna_aa sequence converter
