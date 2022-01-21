@@ -24,8 +24,6 @@ for i in dna:
     # Replace all occurrences of G with C
     elif i == "G":
       rna += "C"    
-    else:
-        rna += i
 
 # Print the RNA string
 print( "RNA: ", rna)
