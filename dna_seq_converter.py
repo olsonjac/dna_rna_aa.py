@@ -1,5 +1,5 @@
 
-file_name = input("Enter the file name of the DNA sequence you want transcribed: ")
+file_name = input("Enter the file name of the DNA sequence you want transcribed into mRNA and translated into its amino acid sequence: ")
 file = open(file_name, 'r')
 dna = file.read().upper()
 print("DNA: "+ dna)
