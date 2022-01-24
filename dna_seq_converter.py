@@ -64,11 +64,7 @@ print("codon list:                ", rna_seq)
 #a new list called aa_seq
 count = 0
 while True:
-  for index in rna_seq:
-    for key in rna_codon_dict:
-      if key in rna_seq:
-        aa_seq.append(rna_codon_dict[key])
-        count = count+ 1
-        if count == limit:
-          print("the amino acid sequence is:" ,aa_seq)
-          break
+amino_acid=[]
+for x in range(len(rna_seq)):
+    amino_acid.append(rna_codon_dict[rna_seq[x]])
+    print("the amino acid sequence is:" `,amino_acid)
