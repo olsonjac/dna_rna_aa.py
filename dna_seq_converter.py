@@ -67,3 +67,10 @@ for x in range(len(rna_seq)):
     amino_acid.append(rna_codon_dict[rna_seq[x]])
 
 print("the amino acid sequence is:" ,amino_acid)
+
+#This section writes the amino acid sequence that is generated to a new comma separated text file labeled aa_seq.txt
+aa_seq = amino_acid 
+textfile = open("aa_seq.txt", "w")
+for element in aa_seq:
+    textfile.write(element + ",")
+textfile.close()   
