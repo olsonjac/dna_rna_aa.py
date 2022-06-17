@@ -1,5 +1,5 @@
 
-file_name = input("Enter the file name of the DNA sequence you want transcribed into mRNA and translated into its amino acid sequence: ")
+file_name = input("Enter the file name of the DNA sequence you want transcribed into mRNA and translated into its amino acid sequence in the local directory: ")
 file = open(file_name, 'r')
 dna = file.read().upper()
 print("DNA: "+ dna)
@@ -17,7 +17,7 @@ for base in dna:
     elif base == "G":
       rna += "C"    
 
-#makes a list of rna then prints rna and codon list
+#makes a list of rna codons and then prints rna and codon list
 rna_seq = [(rna[i:i+3]) for i in range(0,len(rna), 3)]
 print("RNA: "+rna)
 print("Codon List:", rna_seq)
@@ -44,7 +44,7 @@ rna_codon_dict = {"UUU" : "F", "CUU" : "L", "AUU" : "I", "GUU" : "V",
 
 
 #this blocks creates an empty amino_acid list
-#it finds the value for each codon in the dictonary and appends it to this list which is then printed
+#it finds the value(amino acid) for each codon in the dictonary and appends it to this list which is then printed
 amino_acid=[]
 for x in range(len(rna_seq)):
   amino_acid.append(rna_codon_dict[rna_seq[x]])
