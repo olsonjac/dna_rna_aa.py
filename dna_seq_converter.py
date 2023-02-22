@@ -8,14 +8,14 @@ rna = ""
 # Generate the RNA string
 for base in dna:
     # Replace all occurrences of T with U
-    if base == "T":
-      rna += "A"
-    elif base == "A":
-      rna += "U"
-    elif base == "C":
-      rna += "G"
-    elif base == "G":
-      rna += "C"    
+  if base == "T":
+    rna += "A"
+  elif base == "A":
+    rna += "U"
+  elif base == "C":
+    rna += "G"
+  elif base == "G":
+    rna += "C"    
 
 #makes a list of rna codons and then prints rna and codon list
 rna_seq = [(rna[i:i+3]) for i in range(0,len(rna), 3)]
