@@ -6,8 +6,7 @@ print("DNA: "+ dna)
 rna = ""
 
 # Generate the RNA string
-for base in dna:
-    # Replace all occurrences of T with U
+for base in dna:  
   if base == "T":
     rna += "A"
   elif base == "A":
